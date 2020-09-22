@@ -11,6 +11,8 @@ Vue.use({
   Message
 })
 ```
+>>注意这是没有直接使用Vue.use(Message) 这样会默认执行一次Message.install方法
+---
 #### 3. script代码就可以在项目的任意位置使用:
 ```
 this.$message('请先登录')
@@ -18,5 +20,3 @@ this.$message.warning('XXX')
 this.$message.success('XXX')
 this.$message.error('XXX')
 ```
->>注意这是没有直接使用Vue.use(Message) 这样会默认执行一次Message.install方法
----
